@@ -292,72 +292,56 @@
 <section class="gallery-container" id="gallery-container">
   <h2 class="heading"><i class="fa-solid fa-image"></i> <span>Photos</span></h2>
   <div class="container">
-    <!-- Radio Inputs for Images -->
     <input type="radio" name="images" id="i1" checked>
     <input type="radio" name="images" id="i2">
     <input type="radio" name="images" id="i3">
     <input type="radio" name="images" id="i4">
     <input type="radio" name="images" id="i5">
-    <input type="radio" name="images" id="i6">
-    <input type="radio" name="images" id="i7">
-    <input type="radio" name="images" id="i8">
-    <input type="radio" name="images" id="i9">
-    <input type="radio" name="images" id="i10">
-    <input type="radio" name="images" id="i11">
-    <input type="radio" name="images" id="i12">
-    <input type="radio" name="images" id="i13">
-    <input type="radio" name="images" id="i14">
-    <input type="radio" name="images" id="i15">
-
-    <!-- Image Slides -->
+    <!-- <input type="radio" name="images" id="i6"> -->
+    <!-- <input type="radio" name="images" id="i7"> -->
+    <!-- <div class="slide_img" id="one">
+      <img src="./assets/images/gallery/img0.png" alt="img0" />
+        <label for="i7" class="prev"></label>
+        <label for="i2" class="next"></label>
+    </div> -->
     <div class="slide_img" id="one">
-      <img src="./assets/images/gallery/img1.png" alt="img1" />
-      <label for="i15" class="prev"></label>
-      <label for="i2" class="next"></label>
-    </div>
-    
-    <!-- Generating slides dynamically -->
-    <!-- Loop from 2 to 14 -->
-    <!-- Each slide links to the previous and next image -->
-    <!-- Example: slide 2 will link to slide 1 (prev) and slide 3 (next) -->
-    
-    <div class="slide_img" id="two">
       <img src="./assets/images/gallery/img2.png" alt="img2" />
-      <label for="i1" class="prev"></label>
-      <label for="i3" class="next"></label>
+        <label for="i5" class="prev"></label>
+        <label for="i2" class="next"></label>
     </div>
-    
-    <div class="slide_img" id="three">
+    <!-- <div class="slide_img" id="two">
       <img src="./assets/images/gallery/img3.png" alt="img3" />
-      <label for="i2" class="prev"></label>
-      <label for="i4" class="next"></label>
+        <label for="i2" class="prev"></label>
+        <label for="i4" class="next"></label>
+    </div> -->
+    <div class="slide_img" id="two">
+      <img src="./assets/images/gallery/img4.png" alt="img4" />
+        <label for="i1" class="prev"></label>
+        <label for="i3" class="next"></label>
     </div>
-
-    <!-- Repeat for all images up to img15 -->
-
-    <div class="slide_img" id="fifteen">
-      <img src="./assets/images/gallery/img15.png" alt="img15" />
-      <label for="i14" class="prev"></label>
-      <label for="i1" class="next"></label>
+    <div class="slide_img" id="three">
+      <img src="./assets/images/gallery/img5.png" alt="img5" />
+        <label for="i2" class="prev"></label>
+        <label for="i4" class="next"></label>
     </div>
-
-    <!-- Navigation Buttons -->
+    <div class="slide_img" id="four">
+      <img src="./assets/images/gallery/img6.png" alt="img6" />
+        <label for="i3" class="prev"></label>
+        <label for="i5" class="next"></label>
+    </div>
+    <div class="slide_img" id="five">
+      <img src="./assets/images/gallery/img7.png" alt="img7" />
+        <label for="i4" class="prev"></label>
+        <label for="i1" class="next"></label>
+    </div>
     <div class="nav-auto">
       <div class="auto-btn-1"></div>
       <div class="auto-btn-2"></div>
       <div class="auto-btn-3"></div>
       <div class="auto-btn-4"></div>
       <div class="auto-btn-5"></div>
-      <div class="auto-btn-6"></div>
-      <div class="auto-btn-7"></div>
-      <div class="auto-btn-8"></div>
-      <div class="auto-btn-9"></div>
-      <div class="auto-btn-10"></div>
-      <div class="auto-btn-11"></div>
-      <div class="auto-btn-12"></div>
-      <div class="auto-btn-13"></div>
-      <div class="auto-btn-14"></div>
-      <div class="auto-btn-15"></div>
+      <!-- <div class="auto-btn-6"></div> -->
+      <!-- <div class="auto-btn-7"></div> -->
     </div>
 
     <div class="nav">
@@ -366,16 +350,8 @@
       <label class="dots" id="dot3" for="i3"></label>
       <label class="dots" id="dot4" for="i4"></label>
       <label class="dots" id="dot5" for="i5"></label>
-      <label class="dots" id="dot6" for="i6"></label>
-      <label class="dots" id="dot7" for="i7"></label>
-      <label class="dots" id="dot8" for="i8"></label>
-      <label class="dots" id="dot9" for="i9"></label>
-      <label class="dots" id="dot10" for="i10"></label>
-      <label class="dots" id="dot11" for="i11"></label>
-      <label class="dots" id="dot12" for="i12"></label>
-      <label class="dots" id="dot13" for="i13"></label>
-      <label class="dots" id="dot14" for="i14"></label>
-      <label class="dots" id="dot15" for="i15"></label>
+      <!-- <label class="dots" id="dot6" for="i6"></label> -->
+      <!-- <label class="dots" id="dot7" for="i7"></label> -->
     </div>
   </div>
 
@@ -384,11 +360,13 @@
     setInterval(function(){
       document.getElementById('i'+counter).checked = true;
       counter++;
-      if(counter > 15){
-        counter = 1;
+
+      if(counter>5){
+        counter = 1
       }
-    }, 5000);
+    },5000)
   </script>
+
 </section>
 
 <!-- Photo-gallery section ends -->
